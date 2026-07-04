@@ -1,0 +1,15 @@
+{
+  "name": "Deen & Discipline",
+  "short_name": "DeenDiscipline",
+  "description": "Offline-first life system: prayers, habits, finance, hostel expense splitting, notes, ideas, study, health.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a2e26",
+  "theme_color": "#0a2e26",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

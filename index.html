@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deen & Discipline</title>
+<meta name="theme-color" content="#0a2e26">
+<meta name="description" content="Offline-first Islamic life system: prayers, habits, finance, hostel expense splitting, notes, ideas, study and health tracking.">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Deen&Discipline">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="splash" style="min-height:100vh;display:flex;align-items:center;justify-content:center;">
+    <p class="serif" style="letter-spacing:0.15em;color:#d3ad4d">Loading your day…</p>
+  </div>
+
+  <header class="top">
+    <p class="eyebrow">Bismillah</p>
+    <h1 class="serif">Deen &amp; Discipline</h1>
+    <div class="date-row">
+      <button class="icon-btn" onclick="shiftDate(-1)">‹</button>
+      <input type="date" id="dateLabel" onchange="setDate(this.value)">
+      <button class="icon-btn" onclick="shiftDate(1)">›</button>
+      <button class="icon-btn" onclick="setDate(todayStr())" style="font-size:11px">today</button>
+    </div>
+    <div id="offlineBanner" class="offline-banner"></div>
+  </header>
+
+  <main id="view"></main>
+
+  <div id="toast" class="toast" style="display:none"></div>
+  <nav class="bottom" id="bottomNav"></nav>
+
+  <div id="recaptcha-container"></div>
+
+  <script src="./js/db.js"></script>
+  <script src="./js/prayertimes.js"></script>
+  <script type="module" src="./js/cloud.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
